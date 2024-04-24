@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#1E1E1E',
+              white: '#FFFFFF',
+              brown: '#96583F',
+              gold: '#DBB859'
+            },
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"]
+            },
+          }
+        }
+      }
+    </script>
     <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
             crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
           rel="stylesheet">
   </head>
-  <body>
+  <body class="font-oswald">
     <header class="flex justify-between mx-10">
       <figure>
         <img src="https://placehold.co/60x60" alt="logo-barber">
