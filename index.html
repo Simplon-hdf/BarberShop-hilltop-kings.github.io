@@ -35,24 +35,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
           rel="stylesheet">
   </head>
-  <body class="font-oswald">
-    <header class="flex justify-between mx-10">
+  <body class="font-oswald bg-background text-white">
+    <header class="flex fixed top-5 w-full justify-between">
       <figure>
-        <img src="https://placehold.co/60x60" alt="logo-barber">
+        <img class="ml-20" src="https://placehold.co/60x60" alt="logo-barber">
       </figure>
-      <nav class="flex items-center">
-        <ul class="flex space-x-5">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="about.html">Notre équipe</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="shop.html">Boutique</a></li>
-          <li><a href="gallery.html">Gallerie</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="booking.html">Réservation</a></li>
-          <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-          </li>
-        </ul>
+      <nav class="flex items-center w-1/2 justify-between mr-40">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">Notre équipe</a>
+        <a href="services.html">Services</a>
+        <a href="shop.html">Boutique</a>
+        <a href="gallery.html">Gallerie</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html">Réservation</a>
+        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
       </nav>
     </header>
     <section class="">
@@ -63,6 +60,13 @@
           natus, amet iste illo aperiam illum earum eaque? Omnis, nam? </p>
       </div>
       <div class="">
+    <main class="min-h-screen">
+    <section>
+      <h2>Title</h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt maiores
+        ea nemo quia odio vel tempore perferendis quam aut sapiente natus, amet
+        iste illo aperiam illum earum eaque? Omnis, nam? </p>
+      <div>
         <button>Contactez Nous</button>
         <button>Nos Services</button>
       </div>
@@ -96,7 +100,8 @@
       </div>
       <button>Nos Produits</button>
     </section>
-    <footer class="bg-white dark:bg-zinc-950">
+  </main>
+    <footer class="bg-zinc-950">
       <section class="mx-auto w-full max-w-screen-xl">
         <section
                  class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
@@ -146,16 +151,22 @@
               </li>
             </ul>
           </section>
+          <section class="p-20">
+            <button class="bg-neutral-950 text-white border border-[#DBB859] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+              <span class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+              Contactez nous
+            </button>
+          </section>
         </section>
         <section
-                 class="px-4 py-6 bg-amber-950 md:flex md:items-center md:justify-between">
+                 class="px-4 py-6 bg-dark md:flex md:items-center md:justify-between">
           <span
-                class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">©
+                class="text-sm text-[#DBB859] sm:text-center">©
             2024 Barber shop™</a>. Tous droits réservés</span>
           <section
                    class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a href="#"
-               class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+               class="text-white hover:text-gray-400">
               <svg class="w-4 h-4" aria-hidden="true"
                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                    viewBox="0 0 8 19">
@@ -166,7 +177,7 @@
               <span class="sr-only">Page facebook</span>
             </a>
             <a href="#"
-               class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+               class="text-white hover:text-gray-400">
               <svg class="w-4 h-4" aria-hidden="true"
                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                    viewBox="0 0 20 17">
