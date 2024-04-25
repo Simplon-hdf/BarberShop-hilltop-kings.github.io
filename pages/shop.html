@@ -5,18 +5,225 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
         <title>BarberShop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            background: '#1E1E1E',
+                            white: '#FFFFFF',
+                            brown: '#96583F',
+                            gold: '#DBB859',
+                            gold_varient: '#d5b981',
+                        },
+                        fontFamily: {
+                            oswald: ["Oswald", "sans-serif"],
+                            bilbo: ["Bilbo Swash Caps"]
+                        },
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
+                crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+              rel="stylesheet">
     </head>
-    <body>
-        <section>
-            <div>
-                <figure>
-                    <img src="" alt="">
+    <body class="font-oswald bg-background text-white">
+        <section class="w-100 grid grid-cols-6 grid-rows-2">
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-2 col-end-5">
+                <figure class="py-4">
+                    <img src=" https://placehold.co/200x300" alt="">
                 </figure>
                 <h3>Product Name</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                </p>
-                <button>buy me</button>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-1 col-end-6">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-1 col-end-5">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-1 col-end-4">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-1 col-end-3">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-2 col-end-6">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-2 col-end-4">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
+            </div>
+            <div
+                 class="w-100 flex flex-col items-center py-10 row-start-2 col-end-3">
+                <figure class="py-4">
+                    <img src="https://placehold.co/200x300" alt="">
+                </figure>
+                <h3>Product Name</h3>
+                <p class="py-4"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. </p>
+                <button
+                        class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">
+                    <i class="fa-solid fa-cart-shopping"></i>+</button>
             </div>
         </section>
+        <footer class="bg-zinc-950">
+            <section class="mx-auto w-full max-w-screen-xl">
+                <section
+                         class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                            Entreprise</h2>
+                        <ul
+                            class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class=" hover:underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Blog</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                            Centre d'aide</h2>
+                        <ul
+                            class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Twitter</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Facebook</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Contact</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                            Legal</h2>
+                        <ul
+                            class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Politique de
+                                    confidentialité</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Licence</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Termes &amp;
+                                    Conditions</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="p-20">
+                        <button
+                                class="bg-neutral-950 text-white border border-[#DBB859] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                            <span
+                                  class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
+                            Contactez nous </button>
+                    </section>
+                </section>
+                <section
+                         class="px-4 py-6 bg-dark md:flex md:items-center md:justify-between">
+                    <span class="text-sm text-[#DBB859] sm:text-center">© 2024
+                        Barber shop™</a>. Tous droits réservés</span>
+                    <section
+                             class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+                        <a href="#" class="text-white hover:text-gray-400">
+                            <svg class="w-4 h-4" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 fill="currentColor" viewBox="0 0 8 19">
+                                <path fill-rule="evenodd"
+                                      d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                      clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Page facebook</span>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-400">
+                            <svg class="w-4 h-4" aria-hidden="true"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 fill="currentColor" viewBox="0 0 20 17">
+                                <path fill-rule="evenodd"
+                                      d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                      clip-rule="evenodd" />
+                            </svg>
+                            <span class="sr-only">Page twitter</span>
+                        </a>
+                    </section>
+        </footer>
     </body>
 </html>
