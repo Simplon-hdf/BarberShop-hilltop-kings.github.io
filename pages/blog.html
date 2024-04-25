@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BarberShop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            background: '#1E1E1E',
+                            white: '#FFFFFF',
+                            brown: '#96583F',
+                            gold: '#DBB859',
+                            gold_varient: '#d5b981',
+                        },
+                        fontFamily: {
+                            oswald: ["Oswald", "sans-serif"],
+                            bilbo: ["Bilbo Swash Caps"]
+                        },
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
+                crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+              rel="stylesheet">
+    </head>
+    <body class="font-oswald bg-background text-white grid grid-cols-1">
+        <header
+                class="bg-black bg-opacity-80 w-full fixed left-0 right-0 top-0 z-50">
+            <div class="flex items-center w-3/4 justify-between mx-auto mt-5">
+                <figure>
+                    <a href="/">
+                        <img class="w-24"
+                             src="/img/Capture_d_écran_2024-04-25_080354-removebg-preview.png"
+                             alt="logo-barber">
+                    </a>
+                </figure>
+                <nav
+                     class="flex justify-center text-nowrap w-3/4 gap-x-6 text-xl ">
+                    <a class="hover:text-gold" href="index.html">Accueil</a>
+                    <a class="hover:text-gold" href="about.html">Notre
+                        équipe</a>
+                    <a class="hover:text-gold" href="services.html">Services</a>
+                    <a class="hover:text-gold" href="shop.html">Boutique</a>
+                    <a class="hover:text-gold" href="gallery.html">Gallerie</a>
+                    <a class="hover:text-gold" href="blog.html">Blog</a>
+                    <a class="hover:text-gold" href="contact.html">Contact</a>
+                    <a class="hover:text-gold"
+                       href="booking.html">Réservation</a>
+                    <a class="hover:text-gold" href=""><i
+                           class="fa-solid fa-cart-shopping"></i></a>
+                </nav>
+            </div>
+        </header>
+        <section
+                 class="w-3/4 filter grayscale hover:filter-none flex flex-col items-center justify-self-center my-10">
+            <img src="/img/expocosmetics-1312191_1280.jpg" alt=""
+                 class="object-cover h-48 w-full ">
+            <h2 class="text-3xl m-6 text-gold_varient">Blog Title </h2>
+            <p class="w-1/2 m-6">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Quas nostrum consectetur quasi facere incidunt
+                ex impedit praesentium id voluptate. Alias dolorum itaque optio
+                illum! Porro inventore consectetur magni iste commodi.</p>
+            <button>Lire plus...</button>
+            <div class=" flex w-2/4 justify-around mt-6">
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-eye mx-5"></i>
+                    <p> 128 vues</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-heart mx-5"></i>
+                    <p> 98 j'aimes</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-calendar mx-5"></i>
+                    <p> 12/04/24</p>
+                </div>
+            </div>
+        </section>
+        <section
+                 class="w-3/4 filter grayscale hover:filter-none flex flex-col items-center justify-self-center my-10">
+            <img src="/img/scissors-7019476_1280.jpg" alt=""
+                 class="object-cover h-48 w-full ">
+            <h2 class="text-3xl m-6 text-gold_varient">Blog Title </h2>
+            <p class="w-1/2 m-6">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Quas nostrum consectetur quasi facere incidunt
+                ex impedit praesentium id voluptate. Alias dolorum itaque optio
+                illum! Porro inventore consectetur magni iste commodi.</p>
+            <button>Lire plus...</button>
+            <div class=" flex w-2/4 justify-around mt-6">
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-eye mx-5"></i>
+                    <p> 128 vues</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-heart mx-5"></i>
+                    <p> 98 j'aimes</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-calendar mx-5"></i>
+                    <p> 12/04/24</p>
+                </div>
+            </div>
+        </section>
+        <section
+                 class="w-3/4 filter grayscale hover:filter-none flex flex-col items-center justify-self-center my-10">
+            <img src="/img/nate-johnston-z3ey8FCwG6c-unsplash.jpg" alt=""
+                 class="object-cover h-48 w-full ">
+            <h2 class="text-3xl m-6 text-gold_varient">Blog Title </h2>
+            <p class="w-1/2 m-6">Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Quas nostrum consectetur quasi facere incidunt
+                ex impedit praesentium id voluptate. Alias dolorum itaque optio
+                illum! Porro inventore consectetur magni iste commodi.</p>
+            <button>Lire plus...</button>
+            <div class=" flex w-2/4 justify-around mt-6">
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-eye mx-5"></i>
+                    <p> 128 vues</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-heart mx-5"></i>
+                    <p> 98 j'aimes</p>
+                </div>
+                <div class="flex items-center justify-center"><i
+                       class="fa-solid fa-calendar mx-5"></i>
+                    <p> 12/04/24</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
