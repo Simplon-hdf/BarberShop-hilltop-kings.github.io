@@ -5,8 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
         <title>BarberShop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#1E1E1E',
+              white: '#FFFFFF',
+              brown: '#96583F',
+              gold: '#DBB859',
+              gold_varient: '#d5b981',
+            },
+            fontFamily: {
+              oswald: ["Oswald", "sans-serif"],
+              bilbo: ["Bilbo Swash Caps"]
+            },
+          }
+        }
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
+            crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+          rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-black font-oswald text-white">
+      <header class="bg-black bg-opacity-80 w-full fixed left-0 right-0 top-0 z-50">
+        <div class="flex items-center w-3/4 justify-between mx-auto mt-5">
+          <figure>
+            <a href="/">
+              <img class="w-24"
+                   src="/img/Capture_d_écran_2024-04-25_080354-removebg-preview.png"
+                   alt="logo-barber">
+            </a>
+          </figure>
+          <nav class="flex justify-center text-nowrap w-3/4 gap-x-6 text-xl ">
+            <a class="hover:text-gold" href="index.html">Accueil</a>
+            <a class="hover:text-gold" href="about.html">Notre équipe</a>
+            <a class="hover:text-gold" href="services.html">Services</a>
+            <a class="hover:text-gold" href="shop.html">Boutique</a>
+            <a class="hover:text-gold" href="gallery.html">Gallerie</a>
+            <a class="hover:text-gold" href="blog.html">Blog</a>
+            <a class="hover:text-gold" href="contact.html">Contact</a>
+            <a class="hover:text-gold" href="booking.html">Réservation</a>
+            <a class="hover:text-gold" href=""><i
+                 class="fa-solid fa-cart-shopping"></i></a>
+          </nav>
+        </div>
+      </header>
+      
+      </section>
+      <section class="h-96 w-full filter grayscale bg-cover flex justify-center items-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/pexels-cecile-hournau-419900900-15168271-modified.jpg);">
+        <h2 class="text-white text-3xl border-b-2 p-10">Contact</h2>
+
+      </section>
         <section>
             <div>
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -14,15 +73,82 @@
                 <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Dolore nam aliquid delectus dolorem vitae.</p>
             </div>
-            <form action="POST">
-                <input type="text" placeholder="Nom">
-                <input type="email" placeholder="Adresse Email">
-                <textarea placeholder="Message" cols="30" rows="10"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
+            <div class="flex items-center justify-center p-24">
+              <div class="mx-auto w-full max-w-[550px]">
+                <form action="https://formbold.com/s/FORM_ID" method="POST">
+                  <div class="mb-5">
+                    <label
+                      for="name"
+                      class="mb-3 block text-base font-medium text-white"
+                    >
+                      Nom
+                    </label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Full Name"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                  </div>
+                  <div class="mb-5">
+                    <label
+                      for="email"
+                      class="mb-3 block text-base font-medium text-white"
+                    >
+                      Adresse mail
+                    </label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="example@domain.com"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                  </div>
+                  <div class="mb-5">
+                    <label
+                      for="subject"
+                      class="mb-3 block text-base font-medium text-white"
+                    >
+                      Suject
+                    </label>
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      placeholder="Enter your subject"
+                      class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    />
+                  </div>
+                  <div class="mb-5">
+                    <label
+                      for="message"
+                      class="mb-3 block text-base font-medium text-white"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      rows="4"
+                      name="message"
+                      id="message"
+                      placeholder="Type your message"
+                      class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button
+                      class="hover:shadow-form flex bg-gold py-3 px-8 text-base font-semibold text-white outline-none"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d81330.37780159766!2d2.7315594038281277!3d50.43040250453095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47dd30f32995b9ed%3A0x227e61b83fe3bfcd!2s84%20Rue%20Paul%20Bert%2C%2062300%20Lens!3m2!1d50.4304847!2d2.8136935!5e0!3m2!1sfr!2sfr!4v1713964743648!5m2!1sfr!2sfr"
-                width="600" height="450" style="border:0;" allowfullscreen=""
+                width="600" height="450" style="border:0" allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
     </body>
