@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
         <title>BarberShop</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -35,73 +34,72 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
               rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body class="font-oswald bg-background text-white">
-        <section class="w-100 flex flex-row py-30">
-            <div class="w-100 flex flex-col items-center py-10 mx-20">
+        <header
+                class="bg-black bg-opacity-80 w-full fixed left-0 right-0 top-0 z-10">
+            <div class="flex items-center w-3/4 justify-between mx-auto mt-5">
                 <figure>
-                    <img src="https://placehold.co/700x300" alt="">
+                    <a href="/">
+                        <img class="w-24"
+                             src="/img/Capture_d_écran_2024-04-25_080354-removebg-preview.png"
+                             alt="logo-barber">
+                    </a>
                 </figure>
-                <h3 class="py-10 font-bilbo text-gold text-4xl">Service Agate
-                </h3>
-                <ul class="list-disc">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                </ul>
-                <p class="py-10">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Veritatis velit repudiandae ducimus quas
-                    illum, libero non accusantium culpa, ipsam, perferendis
-                    earum deserunt? Provident vero accusantium consectetur
-                    iusto, nesciunt error. Accusamus!</p>
-                <div>
-                    <button
-                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">Réserver</button>
-                </div>
+                <nav
+                     class="flex justify-center text-nowrap w-3/4 gap-x-6 text-xl ">
+                    <a class="hover:text-gold" href="../index.html">Accueil</a>
+                    <a class="hover:text-gold" href="about.html">Notre
+                        équipe</a>
+                    <a class="hover:text-gold" href="services.html">Services</a>
+                    <a class="hover:text-gold" href="shop.html">Boutique</a>
+                    <a class="hover:text-gold" href="gallery.html">Gallerie</a>
+                    <a class="hover:text-gold" href="blog.html">Blog</a>
+                    <a class="hover:text-gold" href="contact.html">Contact</a>
+                    <a class="hover:text-gold"
+                       href="booking.html">Réservation</a>
+                    <a class="hover:text-gold" href=""><i
+                           class="fa-solid fa-cart-shopping"></i></a>
+                </nav>
             </div>
-            <div class="w-100 flex flex-col items-center py-10 mx-20">
-                <figure>
-                    <img src="https://placehold.co/700x300" alt="">
-                </figure>
-                <h3 class="py-10 font-bilbo text-gold text-4xl">Service
-                    Aigue-marine</h3>
-                <ul class="list-disc">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                </ul>
-                <p class="py-10">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Veritatis velit repudiandae ducimus quas
-                    illum, libero non accusantium culpa, ipsam, perferendis
-                    earum deserunt? Provident vero accusantium consectetur
-                    iusto, nesciunt error. Accusamus!</pc>
-                <div>
-                    <button
-                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">Réserver</button>
+        </header>
+        <main class="mx-32 mt-32">
+            <section class="section">
+                <h1>Nom Nom Gallery</h1>
+                <div class="grid">
+                    <div class="item">
+                    </div>
+                    <div class="item item--large">
+                    </div>
+                    <div class="item item--medium">
+                    </div>
+                    <div class="item item--large">
+                    </div>
+                    <div class="item item--full">
+                    </div>
+                    <div class="item item--medium">
+                    </div>
+                    <div class="item item--large">
+                    </div>
+                    <div class="item">
+                    </div>
+                    <div class="item item--medium">
+                    </div>
+                    <div class="item item--large">
+                    </div>
+                    <div class="item">
+                    </div>
+                    <div class="item item--medium">
+                    </div>
+                    <div class="item item--medium">
+                    </div>
                 </div>
-            </div>
-            <div class="w-100 flex flex-col items-center py-10 mx-20">
-                <figure>
-                    <img src="https://placehold.co/700x300" alt="">
-                </figure>
-                <h3 class="py-10 font-bilbo text-gold text-4xl">Service Emeraude
-                </h3>
-                <ul class="list-disc">
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Lorem ipsum dolor sit</li>
-                </ul>
-                <p class="py-10">Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Veritatis velit repudiandae ducimus quas
-                    illum, libero non accusantium culpa, ipsam, perferendis
-                    earum deserunt? Provident vero accusantium consectetur
-                    iusto, nesciunt error. Accusamus!</p>
-                <div>
-                    <button
-                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow">Réserver</button>
+                <div class="item">
                 </div>
-            </div>
-        </section>
+                </div>
+                </div>
+        </main>
         <footer class="bg-zinc-950">
             <section class="mx-auto w-full max-w-screen-xl">
                 <section
@@ -157,11 +155,11 @@
                         </ul>
                     </section>
                     <section class="p-20">
-                        <button
-                                class="bg-neutral-950 text-white border border-[#DBB859] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                        <a
+                           class="bg-neutral-950 text-white border border-[#DBB859] border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
                             <span
                                   class="bg-neutral-400 shadow-neutral-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-                            Contactez nous </button>
+                            Contactez nous </a>
                     </section>
                 </section>
                 <section
