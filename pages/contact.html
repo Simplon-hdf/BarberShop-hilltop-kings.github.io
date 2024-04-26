@@ -1,11 +1,10 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title>BarberShop</title>
-        <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -35,6 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     </head>
     <body class="bg-black font-oswald text-white">
       <header class="bg-black bg-opacity-80 w-full fixed left-0 right-0 top-0 z-50">
@@ -66,74 +66,45 @@
         <h2 class="text-white text-3xl border-b-2 p-10">Contact</h2>
 
       </section>
-        <section>
-          
-            <div class="py-24 pr-36">
-              <div class="w-full flex items-end justify-end m-16 border border-2 rounded">
-                <div class="mb-10 mt-32 mb-60">
-                  <p class="pr-32 pl-40 mb-8"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Dolore nam aliquid delectus dolorem vitae.</p>
-                  <p class="pr-32 pl-40"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Dolore nam aliquid delectus dolorem vitae.</p>
+      <container class="container mx-auto">
+        <section class="flex flex-wrap justify-center p-40">
+          <div class="w-full md:w-1/2 md:order-last">
+            <form class="bg-gold_varient
+             shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                  Adresse Email:
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Adresse Email">
               </div>
-                <form class="w-80 mr-64" action="https://formbold.com/s/FORM_ID" method="POST">
-                  
-                  <div class="mb-5">
-                    <label
-                      for="email"
-                      class="mb-3 block text-base font-medium text-white mt-16"
-                    >
-                      Adresse mail
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="example@domain.com"
-                      class="w-96 rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gold focus:shadow-md"
-                    />
-                  </div>
-                  <div class="mb-5">
-                    <label
-                      for="subject"
-                      class="mb-3 block text-base font-medium text-white"
-                    >
-                      Suject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      placeholder="Sujet"
-                      class="w-96 rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gold focus:shadow-md"
-                    />
-                  </div>
-                  <div class="mb-5">
-                    <label
-                      for="message"
-                      class="mb-3 block text-base font-medium text-white"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      rows="4"
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      class="w-96 resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-gold focus:shadow-md"
-                    ></textarea>
-                  </div>
-                  <div>
-                    <button
-                      class="hover:shadow-form flex justify-center mx-32 bg-gold py-3 px-8 text-base font-semibold text-gray-500  outline-none hover:brightness-150 mb-16"
-                    >
-                      Envoyer
-                    </button>
-                  </div>
-                </form>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="sujet">
+                  Sujet:
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="sujet" type="text" placeholder="Sujet">
               </div>
-            </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                  Message:
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Votre message"></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button class="border-2 border-gold bg-gray-700 px-4 pb-2 pt-1 text-xl mx-4 linkgold hover:scale-110" type="button">
+                  Envoyer
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="w-full md:w-1/2 md:order-first p-28">
+            <p class="text-white text-lg font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              fringilla velit nec nulla lobortis, a maximus eros bibendum. Curabitur condimentum interdum urna, id feugiat
+              tortor bibendum vel. Fusce ut nisl lectus. Mauris euismod efficitur enim, sit amet ultricies velit pulvinar
+              vitae. Donec finibus, sapien ac cursus aliquet, nisi eros laoreet arcu, nec tincidunt felis felis ut mauris.
+            </p>
+          </div>
         </section>
+      </container>
         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d81330.37780159766!2d2.7315594038281277!3d50.43040250453095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x47dd30f32995b9ed%3A0x227e61b83fe3bfcd!2s84%20Rue%20Paul%20Bert%2C%2062300%20Lens!3m2!1d50.4304847!2d2.8136935!5e0!3m2!1sfr!2sfr!4v1713964743648!5m2!1sfr!2sfr"
                 width="600" height="450" style="border:0" allowfullscreen=""
                 loading="lazy"
