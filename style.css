@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo");
+.teambutton {
+  position: relative;
+  padding: 0.2em 0;
+}
+
+/* Fade in */
+.teambutton::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(219, 184, 89);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.teambutton:hover::after,
+.teambutton:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+/* Slide in */
+.teambutton {
+  overflow: hidden;
+}
+
+.teambutton:hover::after,
+.teambutton:focus::after {
+  transform: translate3d(0, 0, 0);
+}
+
 .message {
   border: 1px solid #d2d0d0;
   padding: 2em;
