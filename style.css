@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Arvo");
+.calendar button {
+  width: 90px;
+  height: 90px;
+}
+.calendar button:hover {
+  cursor: pointer;
+}
+
 .slidein-underline {
   position: relative;
   padding: 0.2em 0;
@@ -66,7 +74,7 @@ h1 {
   margin: 0 0 1.5em;
 }
 
-.grid {
+.grid_gallery {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
