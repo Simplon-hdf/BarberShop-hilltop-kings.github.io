@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>BarberShop</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            background: '#1E1E1E',
+                            white: '#FFFFFF',
+                            brown: '#96583F',
+                            gold: '#DBB859',
+                            gold_varient: '#d5b981',
+                        },
+                        fontFamily: {
+                            oswald: ["Oswald", "sans-serif"],
+                            bilbo: ["Bilbo Swash Caps"]
+                        },
+                    }
+                }
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/05e4dc2a7f.js"
+                crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+              rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body class="font-oswald bg-background text-white">
+        <header
+                class="bg-black bg-opacity-80 w-full fixed left-0 right-0 top-0 pb-5 z-10">
+            <div
+                 class="flex items-center w-3/4 justify-between mx-auto mt-5 z-100">
+                <figure>
+                    <a href="/">
+                        <img class="w-24"
+                             src="/img/Capture_d_écran_2024-04-25_080354-removebg-preview.png"
+                             alt="logo-barber">
+                    </a>
+                </figure>
+                <nav
+                     class="flex justify-center text-nowrap w-3/4 gap-x-6 text-xl ">
+                    <a class="hover:text-gold" href="../index.html">Accueil</a>
+                    <a class="hover:text-gold" href="./about.html">Notre
+                        équipe</a>
+                    <a class="hover:text-gold"
+                       href="./services.html">Services</a>
+                    <a class="hover:text-gold" href="./shop.html">Boutique</a>
+                    <a class="hover:text-gold"
+                       href="./gallery.html">Gallerie</a>
+                    <a class="hover:text-gold" href="./blog.html">Blog</a>
+                    <a class="hover:text-gold" href="./contact.html">Contact</a>
+                    <a class="hover:text-gold"
+                       href="./booking.html">Réservation</a>
+                    <a class="hover:text-gold" href=""><i
+                           class="fa-solid fa-cart-shopping"></i></a>
+                </nav>
+            </div>
+        </header>
+        <section class="h-96 w-full filter grayscale bg-cover flex justify-center items-center"
+                 style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/pexels-cecile-hournau-419900900-15168271-modified.jpg);">
+            <h2 class="text-white text-3xl border-b-2 p-10">Services</h2>
+        </section>
+        <section class="w-100 flex flex-row py-30">
+            <div class="w-100 flex flex-col items-center py-10 mx-20">
+                <figure>
+                    <img class="object-cover w-[500px] h-[200px]"
+                         src="../img/antonio-reynoso-_25iXtaa6oY-unsplash.jpg"
+                         alt="">
+                </figure>
+                <h3 class="py-10 font-bilbo text-gold text-4xl">Service Agate
+                </h3>
+                <ul class="list-disc">
+                    <li>Taille de barbe personnalisée avec utilisation d'huiles
+                        et de baumes haut de gamme</li>
+                    <li>Coupe de cheveux sur mesure avec consultation
+                        approfondie sur le style et les tendances</li>
+                    <li>Rasage traditionnel à l'ancienne avec serviettes chaudes
+                        et mousse à raser de luxe</li>
+                </ul>
+                <div>
+                    <button
+                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow mt-8">Réserver</button>
+                </div>
+            </div>
+            <div class="w-100 flex flex-col items-center py-10 mx-20">
+                <figure>
+                    <img class="object-cover w-[500px] h-[200px]"
+                         src="../img/allef-vinicius-IvQeAVeJULw-unsplash.jpg"
+                         alt="">
+                </figure>
+                <h3 class="py-10 font-bilbo text-gold text-4xl">Service
+                    Aigue-marine</h3>
+                <ul class="list-disc">
+                    <li>Manucure et soin des mains avec massage relaxant aux
+                        huiles essentielles</li>
+                    <li>Soin du visage premium incluant nettoyage en profondeur,
+                        exfoliation et masque revitalisant</li>
+                    <li>Séance de coiffure spéciale pour événements ou occasions
+                        spéciales avec conseils personnalisés</li>
+                </ul>
+                <div>
+                    <button
+                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow mt-8">Réserver</button>
+                </div>
+            </div>
+            <div class="w-100 flex flex-col items-center py-10 mx-20">
+                <figure>
+                    <img class="object-cover w-[500px] h-[200px]"
+                         src="../img/client-doing-hair-cut-barber-shop-salon.jpg"
+                         alt="">
+                </figure>
+                <h3 class="py-10 font-bilbo text-gold text-4xl">Service Emeraude
+                </h3>
+                <ul class="list-disc">
+                    <li>Séance de relaxation avec massage du cuir chevelu, des
+                        épaules et du cou</li>
+                    <li>Traitement capillaire luxueux avec des produits haut de
+                        gamme pour nourrir et revitaliser les cheveux</li>
+                    <li>Consultation privée avec un expert en style pour une
+                        analyse approfondie de votre look et des recommandations
+                        personnalisées</li>
+                </ul>
+                <div>
+                    <button
+                            class="bg-gold_varient hover:bg-white text-gray-800 font-semibold py-3 px-4 border border-gold_varient rounded shadow mt-8">Réserver</button>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-zinc-950">
+            <div class="mx-auto w-full max-w-screen-xl">
+                <div
+                     class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gold uppercase ">
+                            Entreprise</h2>
+                        <ul class="text-gray-500  font-medium">
+                            <li class="mb-4">
+                                <a href="./about.html"
+                                   class=" slidein-underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="./blog.html"
+                                   class="slidein-underline">Blog</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2
+                            class="mb-6 text-sm font-semibold text-gold uppercase">
+                            Legal </h2>
+                        <ul class="text-gray-500  font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="slidein-underline">Politique
+                                    de confidentialité</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#"
+                                   class="slidein-underline">Licence</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="slidein-underline">Termes
+                                    &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <div class="grid auto-rows-auto justify-items-center">
+                        <a class="" href="./contact.html"><button
+                                    class="border-2 border-gold px-4 pb-2 pt-1 text-xl mx-4 mt-4 linkgold hover:scale-110 ">
+                                Contactez-nous </button></a>
+                        <div class="flex justify-between w-1/3 text-3xl">
+                            <a href="#" class="text-white hover:text-gold ">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-white hover:text-gold">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 py-6 bg-dark flex justify-center">
+                    <span class="text-sm text-[#DBB859] sm:text-center">© 2024
+                        Barber shop™. Tous droits réservés</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
